@@ -1,0 +1,35 @@
+[package]
+name = "eejit"
+description = "A self-hosted Git server that's easy to set up, use, and maintain."
+version = "0.2.1"
+edition = "2021"
+
+keywords = ["cli", "git"]
+categories = ["command-line-utilities"]
+
+readme = "README.md"
+license = "MIT"
+
+homepage = "https://eejit.moh.ink"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.70"
+async-trait = "0.1.68"
+clean-path = "0.2.1"
+colored = "2.0.0"
+comrak = "0.18.0"
+env_logger = "0.10.0"
+futures = "0.3.28"
+log = "0.4.17"
+russh = { version = "0.37.1", features = ["openssl"] }
+russh-keys = "0.37.1"
+sd-notify = "0.4.1"
+serde = { version = "1.0.159", features = ["derive"] }
+shellwords = "1.1.0"
+tempfile = "3.5.0"
+tera = "1.18.1"
+textwrap = "0.16.0"
+tokio = { version = "1.27.0", features = ["full"] }
+toml = "0.7.3"
