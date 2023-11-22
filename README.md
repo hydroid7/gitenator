@@ -39,7 +39,7 @@ You can create a new repository on an Gitenator server by simply pushing an exis
 repos under their personal subdirectory (so for example, the user Alex above could push to `ssh://127.0.0.1:2222/alex/repo.git`
 to create it).
 
-When a new repository is created, Gitenator will insert an `Gitenator.toml` config file into it. There, the user can specify if the repo
+When a new repository is created, Gitenator will insert an `gitenator.toml` config file into it. There, the user can specify if the repo
 is public, and which other members can write to it. Here's a minimal example:
 
 ```toml
